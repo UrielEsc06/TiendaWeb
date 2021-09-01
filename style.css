@@ -12,6 +12,11 @@ body {
   font-family: "Space Mono", monospace;
 }
 /*           Estructura             */
+
+img {
+  width: 100%;
+}
+
 .contenedor {
   width: 90%;
   max-width: 1200px;
@@ -47,8 +52,7 @@ body {
 }
 
 .contenedor .sub_menu2 {
-  background: #111;
-  color: #fff;
+  background: #ffc300;
   grid-area: sub_menu2;
 }
 
@@ -150,23 +154,31 @@ body {
 .sub_menu2 ul li a {
   display: block;
   text-decoration: none;
-  color: #fff;
+  color: #111;
   padding: 0.5rem 1rem;
 
   font-family: "Merienda", cursive;
 }
 
 .sub_menu2 ul li a:hover {
-  background: #ffc300;
-  color: #111;
+  background: #111;
+  color: #ffc300;
   transition: all 0.3s linear;
   border-radius: 0.5rem;
 }
 
 /*          Responsive                */
 
+@media (min-width: 950px) {
+  .sub_menu2 {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 950px) {
   .contenedor {
+    max-width: 90%;
+    margin: 20px auto;
     grid-template-areas:
       "header header header"
       "sub_menu2 sub_menu2 sub_menu2"
