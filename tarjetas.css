@@ -1,0 +1,24 @@
+.bloques {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 4fr));
+}
+
+.bloques .tarjeta {
+  border: 1px solid #111;
+}
+
+.bloques .tarjeta:hover {
+  border: 1px solid #777;
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.tarjeta .main_card {
+  border-top: 1px solid #6666;
+  padding: 10px;
+}

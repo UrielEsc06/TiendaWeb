@@ -1,0 +1,70 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 38px;
+}
+
+.header .logo {
+  font-family: "Gruppo", cursive;
+  letter-spacing: 15px;
+  color: #ffc300;
+  padding-left: 10px;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header ul li {
+  display: inline-block;
+}
+
+.header ul li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-family: "Merienda", cursive;
+}
+
+.header ul li a:hover {
+  background: #ffc300;
+  color: #111;
+  transition: all 0.3s linear;
+  border-radius: 0.5rem;
+}
+/*     sub_menu       */
+
+.sub_menu2 ul {
+  list-style: none;
+}
+
+.sub_menu2 ul li {
+  display: inline-block;
+}
+
+.sub_menu2 ul li a {
+  display: block;
+  text-decoration: none;
+  color: #111;
+  padding: 0.5rem 1rem;
+  font-family: "Merienda", cursive;
+}
+
+.sub_menu2 ul li a:hover {
+  background: #111;
+  color: #ffc300;
+  transition: all 0.3s linear;
+  border-radius: 0.5rem;
+}
+.sub_menu2 .sub_logo {
+  font-family: "Gruppo", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  letter-spacing: 2px;
+}

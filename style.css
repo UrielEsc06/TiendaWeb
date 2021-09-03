@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Gruppo&family=Space+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gruppo&family=Space+Mono&display=swap");
+@import url(tarjetas.css);
+@import url(navbar.css);
 
 * {
   margin: 0;
@@ -12,10 +14,6 @@ body {
   font-family: "Space Mono", monospace;
 }
 /*           Estructura             */
-
-img {
-  width: 100%;
-}
 
 .contenedor {
   width: 90%;
@@ -98,75 +96,6 @@ img {
   grid-area: footer;
 }
 
-/*         Nav        */
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 38px;
-}
-
-.header .logo {
-  font-family: "Gruppo", cursive;
-  letter-spacing: 15px;
-  color: #ffc300;
-  padding-left: 10px;
-}
-
-.header ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.header ul li {
-  display: inline-block;
-}
-
-.header ul li a {
-  display: block;
-  text-decoration: none;
-  color: #fff;
-  padding: 0.5rem 1rem;
-
-  font-family: "Merienda", cursive;
-}
-
-.header ul li a:hover {
-  background: #ffc300;
-  color: #111;
-  transition: all 0.3s linear;
-  border-radius: 0.5rem;
-}
-/*     sub_menu       */
-
-.sub_menu2 ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.sub_menu2 ul li {
-  display: inline-block;
-}
-
-.sub_menu2 ul li a {
-  display: block;
-  text-decoration: none;
-  color: #111;
-  padding: 0.5rem 1rem;
-
-  font-family: "Merienda", cursive;
-}
-
-.sub_menu2 ul li a:hover {
-  background: #111;
-  color: #ffc300;
-  transition: all 0.3s linear;
-  border-radius: 0.5rem;
-}
-
 /*          Responsive                */
 
 @media (min-width: 950px) {
@@ -175,10 +104,10 @@ img {
   }
 }
 
-@media screen and (max-width: 950px) {
+@media (max-width: 950px) {
   .contenedor {
     max-width: 90%;
-    margin: 20px auto;
+    margin: auto;
     grid-template-areas:
       "header header header"
       "sub_menu2 sub_menu2 sub_menu2"
@@ -191,7 +120,12 @@ img {
     display: none;
   }
   .header {
-    align-items: center;
-    justify-content: center;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .sub_menu2 {
+    font-size: 14px;
   }
 }
